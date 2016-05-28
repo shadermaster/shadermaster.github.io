@@ -1,0 +1,426 @@
+/*
+	Author: Vlad Karpov
+	Template: Woodworks (Landing Page)
+	Version: 1.0.0
+	FileName: media.css
+	URL: http://themeforest.net/user/Vladuha/portfolio
+	Support: http://themeforest.net/user/Vladuha#contact
+*/
+
+
+/*
+====================================
+		  TABLE OF CONTENT
+	delete comments when unneeded
+====================================
+
+---  33 Best featurelist: adapt section to screen
+---  47 Best featurelist: make sections fluid height not fixed, hide sliding phone show static images
+---  78 iPad orientation landscape
+  |--- 122 for ipad landscape
+--- 136 Less than iPad orientation landscape
+--- 163 Reset menu centering style
+--- 171 Reset and Set header to fluid heigth
+--- 193 Less than iPad portrait orientation
+	|--- 213 Greeting section
+	|--- 223 Important features
+	|--- 229 Video Secton
+	|--- 242 Testimonials section
+	|--- 249 All features
+	|--- 263 Screenshots
+	|--- 282 Subscribe form
+	|--- 308 Contact form
+	|--- Footer
+--- 337 Small Devices
+--- 383 Retina devices
+
+*/
+
+/* Media Queries
+=================================== */
+
+/* Device size - header*/
+
+@media screen and (max-height: 1240px) {
+
+	#device img{
+		width: 42%;
+	}
+}
+
+@media screen and (max-height: 1160px) {
+
+	#device img{
+		width: 36%;
+	}
+	#descr {
+		bottom: 2%;
+	}
+}
+
+/*Best featurelist: adapt section to screen*/
+
+@media screen and (max-width: 1350px) {
+
+	.Center-Block .col-md-6 {
+		width: 80%;
+	}
+
+	#phone {
+		left: 25%;
+		margin-top: -265px;
+	}
+}
+
+/*Best featurelist: make sections fluid height not fixed, hide sliding phone show static images */
+
+/*@media screen and (max-width: 991px) {*/
+@media screen and (max-width: 1024px) {
+	
+	.col-md-offset-6 {
+		margin-left: auto;
+	}
+	.Center-Block .col-md-6 {
+		width: 100%;
+	}
+
+	.Center-Block .col-md-6 > img:first-child {
+		display: block;
+		text-align: center;
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+		margin-bottom: 20%; 
+		margin-top: 40px;
+	}
+
+	section[id^="page"] {
+		height: auto;
+	}
+
+	section[id^="page"] + div.screen-height-adapt {
+		height: auto;
+	}
+}
+
+/* iPad orientation landscape*/
+
+@media screen and (max-width: 1024px), screen and (max-height: 980px)  {
+	
+	.logo {
+		width: 124px;
+		height: 124px;
+		margin-bottom: 15px;
+	}
+
+	#device {
+		width: 38.770833%;
+	}
+
+	#device img {
+		width: 28%;
+	}
+
+	#descr {
+		width: 61.229167%;
+		bottom: 0;
+		padding: 6% 7% 2% 12%;
+	}
+
+	h2{ font-size: 42px; }
+
+	#main-header h2 {
+		margin-bottom: 30px;
+	} 
+
+	p{ font-size: 16px;	}
+
+	.btn-stroke{ font-size: 18px; }
+
+	.btn-fill{ font-size: 22px; }
+
+	#navigation{
+		z-index: 9999;
+	}
+
+	.navbar{
+		background: rgba(255,255,255,0.8);
+	}
+	
+	/* for ipad landscape */
+
+	#phone img{
+		max-width: 100%;
+	}
+
+	#phone {
+		top: 57%;
+		max-width: 23%;
+		margin-left: -115px;
+	}
+
+}
+
+/* Less than iPad orientation landscape */
+
+@media screen and (max-width: 1023px), screen and (max-height: 600px) {
+
+	#device{
+		display: none;
+	}
+
+	#descr{
+		bottom: auto;
+		width: 100%;
+		padding: 20% 10% 2%;
+	}
+	#navigation{
+		position: absolute;
+		top: 0;
+		height: auto;
+		z-index: 2000;
+	}
+	#main-header{
+		height: 100%;
+	}
+	
+	.section-grey, .section-white {
+		padding: 60px 0 100px 0;
+	}
+
+/*reset menu centering style*/
+
+	.nav-vertical-center{
+		position: static;
+		top: auto;
+		margin-top: auto;
+	}
+
+/* Reset and Set header to fluid heigth */
+
+	.header-wrapper{
+		height: auto;
+	}
+	#main-header {
+		height: auto;
+	}
+	#main-header {
+		min-height: auto;
+ 		height: auto; 
+	}
+
+	#descr {
+		float: none;
+		position: static;
+		padding: 25% 15% 10%;
+	}
+
+}
+
+
+/* Less than iPad portrait orientation */ 
+
+@media screen and (max-width : 767px) {
+
+	/*Common styles*/
+
+	h1 {
+		font-size: 28px;
+	}
+	p {
+    	font-size: 16px;
+	}
+	#descr {
+		padding-top: 25%; 
+	}
+
+	.screen-height-adapt {
+    	height: auto;
+	}
+
+	/*Greeting section*/
+
+	#greeting h1 {
+		padding: 0 10%;
+	}
+
+	#greeting p {
+		padding: 0px 10%;
+	}
+
+	/*Important features*/
+
+	.is-Table .Center-Block {
+    	width: 70%;
+	}
+
+	/*Video Secton*/
+
+	.video-container {
+	    border: 10px solid #fff;
+	    margin-left: 5%;
+	    margin-right: 5%;
+	}
+
+	#video p {
+		margin-top: 28px;
+	    padding: 0px 5%;
+	}
+
+	/*Testimonials section*/
+
+	#testimonials .item p {
+	    font-size: 22px;	
+	    padding: 0 5%;   
+	}
+
+	/*All features*/
+	#allfeatures hr {
+		display: none;
+	}
+
+	#allfeatures .col-md-4 {
+		margin: 0 5% 0;
+	}
+
+	#allfeatures .section-grey {
+		padding-top: 50px;
+		padding-bottom: 40px;
+	}
+
+	/*Screenshots*/
+
+	#screenshots {
+	    margin: 50px 0 0;
+	}
+	#screenshots p {
+		padding: 0 5%;
+	}
+	#screenshots .owl-theme .owl-controls .owl-page span {
+		width: 12px;
+		height: 12px;
+		margin: 5px 7px;
+	}
+
+	#screenshots-carousel .owl-controls {
+		    margin-top: 20px;
+	}
+
+
+	/*Subscribe form*/
+
+	#get-app-now {
+		padding: 0 0 70px;
+	}
+
+	#get-app-now p {
+    	padding: 0;
+	}
+
+	#get-app-now .btn-stroke-inverse {
+		font-size: 16px;
+	}
+
+	#subscribe-now {
+		width: 100%;
+	}
+
+	#subscribe-now input[type="text"] {
+	    padding-left: 25px;
+	    width: 73.6%;
+	}
+	#subscribe-now input[type="submit"] {
+		width: 26%;
+	}
+
+	/*Contact Form*/
+	#contact p {
+		padding: 0 5%;
+	}
+
+	#contact li:nth-child(1), 
+	#contact li:nth-child(2), 
+	#contact li:nth-child(3) {
+		width: 100%;
+		display: block;
+		margin-right:0;
+	}
+
+	/*Footer*/
+
+	#footer .logo-footer + span {
+		padding: 0 5%;
+	}
+
+	.navbar-nav {
+    	margin: 0 -15px;
+	}
+
+	#footer .nav > li > a {
+		font-size: 18px;
+	}
+}
+
+
+@media screen and (max-width: 450px ) {
+
+	#descr {
+		float: none;
+		position: static;
+		padding: 25% 10% 10%;
+	}
+
+	#device img {
+		width: 20%;
+	}
+
+	#main-header .logo{
+		width: 90px;
+		height: 90px;
+		margin-bottom: 0;
+	}
+
+	#main-header h2 {
+	    font-size: 26px;
+	    font-weight: 300;
+	    color: #414141;
+	    margin-bottom: 20px;
+	}
+	#main-header p.description {
+		font-size: 12px;
+		font-weight: 400;
+		margin-bottom: 20px;
+	}
+	#main-header p.description + p {
+		margin-bottom: 0;
+	}
+
+	#main-header .dl-btn{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	#main-header .btn-fill {
+    	font-size: 18px;
+	}
+	#main-header  .btn-stroke {
+		font-size: 16px;
+	}
+
+
+}
+/* Retina devices*/
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-resolution: 144dpi) {
+
+	.logo {
+		background:url(../img/logo@2x.png) no-repeat center;
+		background-size: cover;
+	}
+
+	.logo-footer {
+		background:url(../img/logo-footer@2x.png) no-repeat center;
+		background-size: cover;
+		width:120px;
+		height:120px;
+	}
+}
