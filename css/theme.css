@@ -901,7 +901,7 @@ nav a {
   color: #666;
 }
 nav .logo {
-  max-height: 18px;
+  max-height: 38px;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;

@@ -312,20 +312,20 @@ p.text-white a {
   text-align: center;
 }
 .btn:hover {
-  background-color: #f27244;
+  background-color: #b5125b;
 }
 .btn-filled {
-  background: #f27244;
+  background: #ea2b81;
   color: #fff;
-  border: 1px solid #f27244;
+  border: 1px solid #ea2b81;
 }
 .btn-filled:hover,
 .btn:hover {
   color: #fff;
-  border-color: #f27244;
+  border-color: #ea2b81;
 }
 .btn-filled:hover {
-  background: #ef4e14;
+  background: #b5125b;
 }
 .btn.super-action {
   border-radius: 3px;
@@ -419,7 +419,7 @@ footer.bg-dark span {
   color: #fff;
 }
 ::selection {
-  background: #f27244;
+  background: #ea2b81;
   color: #fff;
 }
 ::-moz-selection {
@@ -901,7 +901,7 @@ nav a {
   color: #666;
 }
 nav .logo {
-  max-height: 18px;
+  max-height: 50px;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1133,7 +1133,7 @@ nav ul li:hover .subnav .subnav {
   position: relative;
 }
 .nav-1 .logo {
-  margin-top: 28px;
+  margin-top: 15px;
 }
 .nav-1 .menu {
   margin-top: 26px;
@@ -3426,7 +3426,7 @@ nav.dismiss-active {
 .pricing-5 .dollar,
 .pricing-5 .price,
 .pricing-5 .terms {
-  color: #f27244;
+  color: #ea2b81;
 }
 .pricing-5 .dollar,
 .pricing-5 .terms {
@@ -4046,7 +4046,7 @@ footer .container {
   padding: 40px 0;
 }
 .footer-5 img {
-  max-height: 17px;
+  max-height: 50px;
   position: relative;
   bottom: 4px;
   margin-right: 32px;
